@@ -5,6 +5,6 @@
 https://github.com/SkyKingL/RsAmazonTopK
 
 ## 运行代码：
-···
+```
 python main.py
-···
+```
