@@ -1,0 +1,282 @@
+原始数据的前10行:
+       reviewerID        asin  overall
+0  A3EBHHCZO6V2A4  5555991584      5.0
+1   AZPWAXJG9OJXV  5555991584      5.0
+2  A38IRL0X2T4DPF  5555991584      5.0
+3  A22IK3I6U76GX0  5555991584      5.0
+4  A1AISPOIIHTHXX  5555991584      4.0
+5  A2P49WD75WHAG5  5555991584      5.0
+6  A3O90G1D7I5EGG  5555991584      3.0
+7  A3EJYJC25OJVKK  5555991584      5.0
+8  A1DA8VOH9NR6C7  5555991584      5.0
+9  A33TRNCQK4IUO7  5555991584      5.0
+
+
+User count: 5541, Item count: 3568
+
+映射后的前10个交互:
+[(0, 0, 5.0), (1, 0, 5.0), (2, 0, 5.0), (3, 0, 5.0), (4, 0, 4.0), (5, 0, 5.0), (6, 0, 3.0), (7, 0, 5.0), (8, 0, 5.0), (9, 0, 5.0)]
+
+映射对应关系示例（前10个交互）:
+交互1: A3EBHHCZO6V2A4(0) - 5555991584(0) - 评分5.0
+交互2: AZPWAXJG9OJXV(1) - 5555991584(0) - 评分5.0
+交互3: A38IRL0X2T4DPF(2) - 5555991584(0) - 评分5.0
+交互4: A22IK3I6U76GX0(3) - 5555991584(0) - 评分5.0
+交互5: A1AISPOIIHTHXX(4) - 5555991584(0) - 评分4.0
+交互6: A2P49WD75WHAG5(5) - 5555991584(0) - 评分5.0
+交互7: A3O90G1D7I5EGG(6) - 5555991584(0) - 评分3.0
+交互8: A3EJYJC25OJVKK(7) - 5555991584(0) - 评分5.0
+交互9: A1DA8VOH9NR6C7(8) - 5555991584(0) - 评分5.0
+交互10: A33TRNCQK4IUO7(9) - 5555991584(0) - 评分5.0
+
+数据集统计信息:
+训练集 - 用户数: 5,541, 交互数: 41,870
+验证集 - 用户数: 5,541, 交互数: 11,418
+测试集 - 用户数: 5,541, 交互数: 11,418
+一个Train batch的数据:
+Batch size: 1024
+
+前5个样本:
+用户: 4310, 物品: 2372, 归一化评分: -2.9725, 原始评分: 1.0000
+用户: 75, 物品: 1888, 归一化评分: 0.7145, 原始评分: 5.0000
+用户: 3721, 物品: 960, 归一化评分: 0.7145, 原始评分: 5.0000
+用户: 129, 物品: 540, 归一化评分: 0.7145, 原始评分: 5.0000
+用户: 5353, 物品: 3480, 归一化评分: 0.7145, 原始评分: 5.0000
+
+
+Epoch 1: Train Loss = 0.9922
+Validation: RMSE = 1.0770, MAE = 0.8445
+Test: RMSE = 1.0815, MAE = 0.8486
+
+Epoch 2: Train Loss = 0.9742
+Validation: RMSE = 1.0704, MAE = 0.8381
+Test: RMSE = 1.0747, MAE = 0.8421
+
+Epoch 3: Train Loss = 0.9613
+Validation: RMSE = 1.0654, MAE = 0.8338
+Test: RMSE = 1.0694, MAE = 0.8375
+
+Epoch 4: Train Loss = 0.9520
+Validation: RMSE = 1.0615, MAE = 0.8301
+Test: RMSE = 1.0655, MAE = 0.8338
+
+Epoch 5: Train Loss = 0.9451
+Validation: RMSE = 1.0585, MAE = 0.8272
+Test: RMSE = 1.0623, MAE = 0.8308
+
+Epoch 6: Train Loss = 0.9394
+Validation: RMSE = 1.0560, MAE = 0.8248
+Test: RMSE = 1.0597, MAE = 0.8284
+
+Epoch 7: Train Loss = 0.9349
+Validation: RMSE = 1.0539, MAE = 0.8231
+Test: RMSE = 1.0575, MAE = 0.8266
+
+Epoch 8: Train Loss = 0.9312
+Validation: RMSE = 1.0522, MAE = 0.8215
+Test: RMSE = 1.0558, MAE = 0.8251
+
+Epoch 9: Train Loss = 0.9278
+Validation: RMSE = 1.0507, MAE = 0.8203
+Test: RMSE = 1.0543, MAE = 0.8238
+
+Epoch 10: Train Loss = 0.9254
+Validation: RMSE = 1.0495, MAE = 0.8194
+Test: RMSE = 1.0530, MAE = 0.8229
+
+Epoch 11: Train Loss = 0.9230
+Validation: RMSE = 1.0484, MAE = 0.8188
+Test: RMSE = 1.0519, MAE = 0.8222
+
+Epoch 12: Train Loss = 0.9217
+Validation: RMSE = 1.0476, MAE = 0.8180
+Test: RMSE = 1.0510, MAE = 0.8214
+
+Epoch 13: Train Loss = 0.9197
+Validation: RMSE = 1.0467, MAE = 0.8179
+Test: RMSE = 1.0502, MAE = 0.8212
+
+Epoch 14: Train Loss = 0.9181
+Validation: RMSE = 1.0460, MAE = 0.8171
+Test: RMSE = 1.0495, MAE = 0.8205
+
+Epoch 15: Train Loss = 0.9168
+Validation: RMSE = 1.0454, MAE = 0.8171
+Test: RMSE = 1.0488, MAE = 0.8204
+
+Epoch 16: Train Loss = 0.9159
+Validation: RMSE = 1.0449, MAE = 0.8168
+Test: RMSE = 1.0483, MAE = 0.8201
+
+Epoch 17: Train Loss = 0.9150
+Validation: RMSE = 1.0445, MAE = 0.8168
+Test: RMSE = 1.0478, MAE = 0.8200
+
+Epoch 18: Train Loss = 0.9141
+Validation: RMSE = 1.0441, MAE = 0.8162
+Test: RMSE = 1.0474, MAE = 0.8195
+
+Epoch 19: Train Loss = 0.9133
+Validation: RMSE = 1.0437, MAE = 0.8163
+Test: RMSE = 1.0470, MAE = 0.8194
+
+Epoch 20: Train Loss = 0.9129
+Validation: RMSE = 1.0434, MAE = 0.8162
+Test: RMSE = 1.0467, MAE = 0.8194
+
+Epoch 21: Train Loss = 0.9118
+Validation: RMSE = 1.0431, MAE = 0.8162
+Test: RMSE = 1.0463, MAE = 0.8193
+
+Epoch 22: Train Loss = 0.9115
+Validation: RMSE = 1.0429, MAE = 0.8159
+Test: RMSE = 1.0462, MAE = 0.8191
+
+Epoch 23: Train Loss = 0.9111
+Validation: RMSE = 1.0426, MAE = 0.8157
+Test: RMSE = 1.0459, MAE = 0.8189
+
+Epoch 24: Train Loss = 0.9113
+Validation: RMSE = 1.0424, MAE = 0.8155
+Test: RMSE = 1.0458, MAE = 0.8187
+
+Epoch 25: Train Loss = 0.9105
+Validation: RMSE = 1.0423, MAE = 0.8157
+Test: RMSE = 1.0455, MAE = 0.8188
+
+Epoch 26: Train Loss = 0.9102
+Validation: RMSE = 1.0421, MAE = 0.8154
+Test: RMSE = 1.0454, MAE = 0.8186
+
+Epoch 27: Train Loss = 0.9097
+Validation: RMSE = 1.0420, MAE = 0.8155
+Test: RMSE = 1.0452, MAE = 0.8186
+
+Epoch 28: Train Loss = 0.9096
+Validation: RMSE = 1.0418, MAE = 0.8154
+Test: RMSE = 1.0450, MAE = 0.8186
+
+Epoch 29: Train Loss = 0.9092
+Validation: RMSE = 1.0417, MAE = 0.8154
+Test: RMSE = 1.0448, MAE = 0.8184
+
+Epoch 30: Train Loss = 0.9095
+Validation: RMSE = 1.0416, MAE = 0.8150
+Test: RMSE = 1.0449, MAE = 0.8182
+
+Epoch 31: Train Loss = 0.9088
+Validation: RMSE = 1.0415, MAE = 0.8153
+Test: RMSE = 1.0447, MAE = 0.8184
+
+Epoch 32: Train Loss = 0.9089
+Validation: RMSE = 1.0414, MAE = 0.8150
+Test: RMSE = 1.0447, MAE = 0.8181
+
+Epoch 33: Train Loss = 0.9087
+Validation: RMSE = 1.0413, MAE = 0.8151
+Test: RMSE = 1.0446, MAE = 0.8182
+
+Epoch 34: Train Loss = 0.9083
+Validation: RMSE = 1.0413, MAE = 0.8152
+Test: RMSE = 1.0445, MAE = 0.8183
+
+Epoch 35: Train Loss = 0.9085
+Validation: RMSE = 1.0412, MAE = 0.8151
+Test: RMSE = 1.0445, MAE = 0.8182
+
+Epoch 36: Train Loss = 0.9082
+Validation: RMSE = 1.0412, MAE = 0.8147
+Test: RMSE = 1.0445, MAE = 0.8179
+
+Epoch 37: Train Loss = 0.9081
+Validation: RMSE = 1.0411, MAE = 0.8150
+Test: RMSE = 1.0443, MAE = 0.8181
+
+Epoch 38: Train Loss = 0.9081
+Validation: RMSE = 1.0411, MAE = 0.8147
+Test: RMSE = 1.0443, MAE = 0.8179
+
+Epoch 39: Train Loss = 0.9081
+Validation: RMSE = 1.0411, MAE = 0.8153
+Test: RMSE = 1.0443, MAE = 0.8184
+
+Epoch 40: Train Loss = 0.9076
+Validation: RMSE = 1.0410, MAE = 0.8148
+Test: RMSE = 1.0442, MAE = 0.8180
+
+Epoch 41: Train Loss = 0.9078
+Validation: RMSE = 1.0410, MAE = 0.8150
+Test: RMSE = 1.0442, MAE = 0.8180
+
+Epoch 42: Train Loss = 0.9078
+Validation: RMSE = 1.0410, MAE = 0.8149
+Test: RMSE = 1.0442, MAE = 0.8180
+
+Epoch 43: Train Loss = 0.9078
+Validation: RMSE = 1.0409, MAE = 0.8150
+Test: RMSE = 1.0442, MAE = 0.8180
+
+Epoch 44: Train Loss = 0.9079
+Validation: RMSE = 1.0409, MAE = 0.8150
+Test: RMSE = 1.0441, MAE = 0.8181
+
+Epoch 45: Train Loss = 0.9079
+Validation: RMSE = 1.0408, MAE = 0.8150
+Test: RMSE = 1.0441, MAE = 0.8181
+
+Epoch 46: Train Loss = 0.9078
+Validation: RMSE = 1.0408, MAE = 0.8149
+Test: RMSE = 1.0441, MAE = 0.8180
+
+Epoch 47: Train Loss = 0.9077
+Validation: RMSE = 1.0408, MAE = 0.8148
+Test: RMSE = 1.0441, MAE = 0.8179
+
+Epoch 48: Train Loss = 0.9078
+Validation: RMSE = 1.0408, MAE = 0.8148
+Test: RMSE = 1.0441, MAE = 0.8179
+
+Epoch 49: Train Loss = 0.9077
+Validation: RMSE = 1.0408, MAE = 0.8149
+Test: RMSE = 1.0440, MAE = 0.8180
+
+Epoch 50: Train Loss = 0.9075
+Validation: RMSE = 1.0408, MAE = 0.8149
+Test: RMSE = 1.0440, MAE = 0.8180
+
+Epoch 51: Train Loss = 0.9075
+Validation: RMSE = 1.0408, MAE = 0.8149
+Test: RMSE = 1.0440, MAE = 0.8180
+
+Epoch 52: Train Loss = 0.9070
+Validation: RMSE = 1.0407, MAE = 0.8147
+Test: RMSE = 1.0440, MAE = 0.8178
+
+Epoch 53: Train Loss = 0.9077
+Validation: RMSE = 1.0408, MAE = 0.8149
+Test: RMSE = 1.0441, MAE = 0.8180
+
+Epoch 54: Train Loss = 0.9076
+Validation: RMSE = 1.0408, MAE = 0.8150
+Test: RMSE = 1.0440, MAE = 0.8181
+
+Epoch 55: Train Loss = 0.9076
+Validation: RMSE = 1.0407, MAE = 0.8148
+Test: RMSE = 1.0440, MAE = 0.8179
+
+Epoch 56: Train Loss = 0.9071
+Validation: RMSE = 1.0408, MAE = 0.8151
+Test: RMSE = 1.0440, MAE = 0.8181
+
+Epoch 57: Train Loss = 0.9072
+Validation: RMSE = 1.0407, MAE = 0.8148
+Test: RMSE = 1.0440, MAE = 0.8179
+
+Early stopping at epoch 57
+Best validation RMSE: 1.0407 at epoch 52
+Corresponding test metrics: RMSE = 1.0440, MAE = 0.8178
+
+Training completed!
+Best Validation RMSE: 1.0407
+Corresponding Test RMSE: 1.0440
+Corresponding Test MAE: 0.8178
